@@ -102,48 +102,67 @@
 # no indexing. 
 # keys unique values can be anything.
 
-drinks = {"fizzy": "sprite", "still": "water", "juice": "orange", "alcoholic": "wine"}
+#d#rinks = {"fizzy": "sprite", "still": "water", "juice": "orange", "alcoholic": "wine"}
 
 #print(drinks)
 
 # direct access
-
-print(drinks["still"])
+#
+#print(drinks["still"])
 
 #drinks["non-alcohlic"] = "water"
 #print(drinks)
 
-drinks["non-alcohlic"] = "squash"
+#drinks["non-alcohlic"] = "squash"
 #print(drinks)
 
 # methods
 
 # values/keys/items
 
-print(drinks.values())
-print(drinks.keys())
-print(drinks.items())
+#print(drinks.values())
+#print(drinks.keys())
+#print(drinks.items())
 
 # get method
 
-print(drinks.get("still"))
-print(drinks.get("stille"))
-print(drinks.get("stille", "not-found"))
+#print(drinks.get("still"))
+#print(drinks.get("stille"))
+#print(drinks.get("stille", "not-found"))
 
 # update 
 
-drinks.update({"sugery": "cola"})
-print(drinks)
+#drinks.update({"sugery": "cola"})
+#print(drinks)
 
 # pop
 
-print(drinks.pop("non-alcohlic"))
-print(drinks)
+#print(drinks.pop("non-alcohlic"))
+#print(drinks)
 
 # exercise:
 
-make a dictionary of books, with 3 authors and multiple books per author.
-have an input that asks for an author name.
-print a STRING of books by that author (NOT A LIST!!). use join. 
-optionally have a little bit of error handling for incorrect author names, using a method. 
+#make a dictionary of books, with 3 authors and multiple books per author.
+#have an input that asks for an author name.
+#print a STRING of books by that author (NOT A LIST!!). use join. 
+#optionally have a little bit of error handling for incorrect author names, using a method. 
+
+books = {"author1": ["book1", "book2"], "author2": ["book3", "book4"]}
+
+#x = input("enter an author name: ")
+
+#print(", ".join(books[x]))
+
+# 2nd solution
+
+y = input("enter author name: ")
+
+x = books.get(y, [])
+
+print(", ".join(x) or "author not found")
+
+
+
+
+
 
