@@ -56,53 +56,94 @@
 
 # append
 
-my_fruits = ["apple", "orange", "pear"]
+#my_fruits = ["apple", "orange", "pear"]
 
-my_fruits.append("kiwi")
+#my_fruits.append("kiwi")
 
-print(my_fruits)
+#print(my_fruits)
 
 # remove 
 
-my_fruits.remove("apple")
-print(my_fruits)
+#my_fruits.remove("apple")
+#print(my_fruits)
 
 # insert 
 
-my_fruits.insert(0, "mango")
-my_fruits.insert(0, "grapes")
-print(my_fruits)
+#my_fruits.insert(0, "mango")
+#my_fruits.insert(0, "grapes")
+#print(my_fruits)
 
 # extend
 
-my_fruits.extend(["melon", "blueberry"])
-print(my_fruits)
+#my_fruits.extend(["melon", "blueberry"])
+#print(my_fruits)
 
 # reveres
 
-my_fruits.reverse()
-print(my_fruits)
+#my_fruits.reverse()
+#print(my_fruits)
 
 # sort 
 
-my_fruits.sort()
-print(my_fruits)
+#my_fruits.sort()
+#print(my_fruits)
 
-my_fruits.sort(key=len)
-print(my_fruits)
+#my_fruits.sort(key=len)
+#print(my_fruits)
 
+# join
 
+#x = "#".join(my_fruits)#
+#print(x)
 
+# dictionaries
+# {} key:value pairs
 
+# no indexing. 
+# keys unique values can be anything.
 
+drinks = {"fizzy": "sprite", "still": "water", "juice": "orange", "alcoholic": "wine"}
 
+#print(drinks)
 
+# direct access
 
+print(drinks["still"])
 
+#drinks["non-alcohlic"] = "water"
+#print(drinks)
 
+drinks["non-alcohlic"] = "squash"
+#print(drinks)
 
+# methods
 
+# values/keys/items
 
+print(drinks.values())
+print(drinks.keys())
+print(drinks.items())
 
+# get method
 
+print(drinks.get("still"))
+print(drinks.get("stille"))
+print(drinks.get("stille", "not-found"))
+
+# update 
+
+drinks.update({"sugery": "cola"})
+print(drinks)
+
+# pop
+
+print(drinks.pop("non-alcohlic"))
+print(drinks)
+
+# exercise:
+
+make a dictionary of books, with 3 authors and multiple books per author.
+have an input that asks for an author name.
+print a STRING of books by that author (NOT A LIST!!). use join. 
+optionally have a little bit of error handling for incorrect author names, using a method. 
 
