@@ -1,0 +1,108 @@
+# collections are our complex data types. 
+# different ways of mstoring our data. 
+
+# lists - ordered(indexed), mutable, collection of values -
+# [a{index position 0}, b{index position 1}, c{index position 2/-1}]
+# 
+# dictionaries - unordered(no index positions), mutable, collection of key:pair values.
+# {key: pair, key1: value, key2: value}
+# 
+# tuples - ordered, immutable (cant be altered), collection of values (a, b , c)
+# or no brackets at all. x = 1, 2, 3 
+#
+# sets - unordered, mutable, collection of unique values, - {a, b, c}
+
+
+#lists:
+
+# lists are stored in []
+
+#colours = ["blue", "red", "yellow", "orange"]
+
+#print(colours)
+
+# direct access
+
+#print(colours[0])
+#print(colours[3])
+#print(colours[-2])
+
+# slicing: create a sub list up to but not including the 2nd number.
+
+#print(colours[0:2]) # blue and red
+#print(colours[1: ]) # no second number slices to the end.
+
+# altering a list with direct access
+
+#food = ["rice", "pasta", "apple", "bread"]
+
+#print(food)
+#food[0] = "pizza"
+#print(food)
+
+#del food[1]
+#print(food)
+
+# nested lists
+
+#numbers = [1, 2, 3, 4]
+#letters = ["a", "b", "c", "d"]
+
+#combined = [numbers, letters]
+
+#print(combined[0][1], combined[1][1])
+
+# string methods
+
+# append
+
+my_fruits = ["apple", "orange", "pear"]
+
+my_fruits.append("kiwi")
+
+print(my_fruits)
+
+# remove 
+
+my_fruits.remove("apple")
+print(my_fruits)
+
+# insert 
+
+my_fruits.insert(0, "mango")
+my_fruits.insert(0, "grapes")
+print(my_fruits)
+
+# extend
+
+my_fruits.extend(["melon", "blueberry"])
+print(my_fruits)
+
+# reveres
+
+my_fruits.reverse()
+print(my_fruits)
+
+# sort 
+
+my_fruits.sort()
+print(my_fruits)
+
+my_fruits.sort(key=len)
+print(my_fruits)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
