@@ -147,7 +147,7 @@
 #print a STRING of books by that author (NOT A LIST!!). use join. 
 #optionally have a little bit of error handling for incorrect author names, using a method. 
 
-books = {"author1": ["book1", "book2"], "author2": ["book3", "book4"]}
+#books = {"author1": ["book1", "book2"], "author2": ["book3", "book4"]}
 
 #x = input("enter an author name: ")
 
@@ -155,11 +155,53 @@ books = {"author1": ["book1", "book2"], "author2": ["book3", "book4"]}
 
 # 2nd solution
 
-y = input("enter author name: ")
+#y = input("enter author name: ")
 
-x = books.get(y, [])
+#x = books.get(y, [])
 
-print(", ".join(x) or "author not found")
+#print(", ".join(x) or "author not found")
+
+# tuples
+# similar to lists but immutable. 
+# indicates we donbt to change the data. 
+# more speed - very slight
+# less memory -  very slight
+
+
+# use () or no brackets at all
+
+#rectangle = 10, 5
+
+#rectangle[0] = 15
+
+# tuple methods just count and index.
+# built in functions also like zip, max, len, min etc...
+
+# sets
+
+# no indexing, unique values.
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+# union - combines sets removes duplicates.
+print(set1.union(set2))
+
+# intersection
+
+print(set1.intersection(set2))
+
+# difference
+
+print(set1.difference(set2))
+
+# symetircal diff
+
+print(set1.symmetric_difference(set2))
+
+
+
+
 
 
 
