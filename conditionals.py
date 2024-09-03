@@ -54,16 +54,64 @@
 #else:
 #    print("probably bad")
 
+# exercise:
+# user to input a grade/mark
+# if the mark is above 85 print distiction
+# betweeen 65 and 85 print pass
+# anything else print fail.
+# use if elif else. 
+
+#x = int(input("enter grade: "))
+
+#if x >= 85: 
+#    print("distinction")
+#elif x >= 65:
+#    print("pass")
+#else:
+    #print("fail")
+
+
+# multiple comparators
+
+#deposit = 500
+#password = "password1"
+
+#if 0 < deposit < 100 and password == "password1":
+#    print(f"thankyou for deposit of {deposit}")
+#else:
+#    print("deposit failed")
+
+# not
+
+#if not 0 < deposit < 100 and password != "password":
+#    print("deposit failed")
+#else:
+#    print("thanks for depsoit")
+
+# in and not in
+
+#name = "root33"
+
+#if name in ("root", "admin", "user"):
+#    print("invalid username")
+#else:
+#    print("accepted")
+
+
+#if name not in ("root", "admin", "user"):
+#    print("accepted")
+#else:
+#    print("invalid name")
+
 exercise:
-user to input a grade/mark
-if the mark is above 85 print distiction
-betweeen 65 and 85 print pass
-anything else print fail.
-use if elif else. 
-
-
-
-
+weight converter app
+user to input weight
+user to select Kgs or Lbs
+if statement to check the unit entered
+logic to convert the weight (kgs to lbs or lbs to kgs)
+print out the converted value
+error handling for upper/lower case
+optional - error handling for input validation. 
 
 
 
