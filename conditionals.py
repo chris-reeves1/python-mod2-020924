@@ -103,15 +103,81 @@
 #else:
 #    print("invalid name")
 
-exercise:
-weight converter app
-user to input weight
-user to select Kgs or Lbs
-if statement to check the unit entered
-logic to convert the weight (kgs to lbs or lbs to kgs)
-print out the converted value
-error handling for upper/lower case
-optional - error handling for input validation. 
+#exercise:
+#weight converter app
+#user to input weight
+#user to select Kgs or Lbs
+#if statement to check the unit entered
+#logic to convert the weight (kgs to lbs or lbs to kgs)
+#print out the converted value
+#error handling for upper/lower case
+#optional - error handling for input validation. 
+
+
+# 1st solution
+
+#weight = float(input("enter weight: ")) 
+#unit = input("enter K (kgs) or L (lbs): ")
+
+#if unit.upper() == "K":
+#    converted = weight / 0.45
+#    print(f"converted weight is {converted}")
+#elif unit.upper() == "L":
+#    converted = weight * 0.45
+#    print(f"converted weight is {converted}")
+#else:
+#    print("invalid choice - enter L or K !!!!!")
+
+# 2nd solution
+
+#import sys
+
+#try:
+#    weight = float(input("enter weight: "))
+#except ValueError:
+ #   print("invalid input, please enter a numeric value.")
+ #   sys.exit() 
+
+#while True:
+#    unit = input("enter K (kgs) or L (lbs): ").upper()
+
+#    if unit == "K":
+#        converted = weight / 0.45
+#        print(f"converted weight is {converted}")
+#        break
+#    elif unit == "L":
+#        converted = weight * 0.45
+#        print(f"converted weight is {converted}")
+#        break
+#    else:
+#        print("invalid choice - enter L or K !!!!!")
+
+# highest number
+
+#num = 10
+#num1 = 20
+
+
+# rewrite without using if statements or any in built functions (no max!!!!)
+
+#num = 30
+#num1 = 40
+
+#result = num1 + (num - num1) * (num >= num1)
+
+#print(result)
+
+
+
+#num = 10
+#num1 = 20
+
+#larger = num * (num > num1) + num1 * (num1 > num)
+#print(larger)
+
+
+
+
 
 
 
