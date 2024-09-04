@@ -134,6 +134,40 @@ for i in {"drink": "water"}.items():
 # list comprehsion
 # optional - list comp 1 line only !!
 
+# while loop
+#counter = 0
+#while counter < 5:
+   # name = input("enter a name: ")
+  #  print(name + " is cool")
+ #   counter += 1
+
+#for x in range(5):
+ #   name = input("name: ")
+ #   print(name + " is cool")
+
+#names = [input("enter a name: ") for name in range(5)] # just making an iterable for the next loop.
+#for name in names:
+    #print(f"{name} is cool")
+
+# combined list comp
+
+# inner list comprehsion
+#[input("Enter a name") for x in range(5)]
+# outer list comprehsion
+#[print(f"{name} is cool") for name in *iterable goes here*]
+
+x = [print(f"{name} is cool") for name in [input("Enter a name") for x in range(5)]]
+
+# list comprehension is for making lists. 
+# print returns None 
+# the print here is call list comprehension side effect. 
+
+print(x)
+
+
+
+
+
 
 
 
