@@ -3,20 +3,23 @@ import csv
 companies = []
 sales = []
 
-with open("output.csv") as cvsfile:
-    reader = cvs.reader(cvsfile)
+with open("output.csv") as csvfile:
+    reader = csv.reader(csvfile)
     next(reader)
-    for .......... .. ........;
-        companyname in company list
-        sales data into sales list [list comp]
+    for row in reader:
+        companies.append(row[0])
+        sales.append([int(x.replace(",", "")) for x in row[1: ]])
 
-monthly_sum = [expression item zip(*sales)]
+print(sales)
+
+monthly_sum = [sum(x) for x in zip(*sales)]
+print(monthly_sum)
 
 yearly_sum = {}
-for .. ... ...:
-    yearly_sum... = ....
+for i in range(len(companies)):
+    yearly_sum[companies[i]] = sum(sales[i])
 
-print(monthly)
-print(yearly)
-for x, y in ....items():
-    print(x, y)
+
+print("yearly sales: ")
+for compnay, sales in yearly_sum.items():
+    print(compnay, sales)
